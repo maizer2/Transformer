@@ -63,8 +63,6 @@ Transformer는 “RNN을 대체한 구조”라서, RNN을 조금이라도 알�
 
 ### (5) Attention 메커니즘
 
-Transformer의 심장.
-
 * “모든 토큰이 서로를 **얼마나 중요하게 볼지** 가중치를 계산하는 것”
 * **Scaled dot-product attention**
 
@@ -72,7 +70,7 @@ Transformer의 심장.
   * dot-product로 similarity 계산 → softmax로 정규화 → 가중합
 * RNN + Attention (기존 seq2seq에서 decoder가 encoder의 hidden states에 주목하는 구조)
 
-여기까지 이해되면,
+심화 ->
 
 > “RNN 대신 self-attention만으로 전체 시퀀스를 처리”
 > 이게 Transformer의 아이디어라는 게 딱 들어온다.
@@ -93,10 +91,9 @@ Transformer의 심장.
 
 ### (7) Transformer 본체 개념
 
-여기부터가 본게임.
-
 * Self-Attention vs Cross-Attention
 * Multi-Head Attention
+* Feed-forward network
 * Positional Encoding (sin/cos or learned)
 * Residual connection + LayerNorm
 * Encoder–Decoder 구조 (원래 논문) vs Decoder-only (요즘 LLM 스타일)
